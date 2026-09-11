@@ -1,0 +1,22 @@
+.footer {
+  background-color: #060913;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-copyright {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.footer-brand {
+  color: #d4af37;
+  font-weight: 600;
+}

@@ -1,0 +1,110 @@
+.counter-section {
+  background-color: #0b1120;
+  padding: 5rem 1.5rem 6rem 1.5rem;
+  text-align: center;
+}
+
+.counter-container {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.counter-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.counter-subtitle {
+  font-size: 1.05rem;
+  color: #94a3b8;
+  margin-bottom: 2.5rem;
+}
+
+.counter-box {
+  background-color: #17223b;
+  border-radius: 20px;
+  padding: 2.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 380px;
+  margin: 0 auto 1.25rem auto;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.counter-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d4af37 0%, #c59b27 50%, #aa771c 100%);
+  color: #0b1120;
+  font-size: 1.6rem;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+  line-height: 1;
+}
+
+.counter-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #ffe082 0%, #d4af37 60%, #b8860b 100%);
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6);
+}
+
+.counter-btn:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.counter-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.counter-value {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  min-width: 80px;
+  user-select: none;
+}
+
+.counter-label {
+  font-size: 0.95rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .counter-section {
+    padding: 3.5rem 1.25rem 4rem 1.25rem;
+  }
+
+  .counter-title {
+    font-size: 1.75rem;
+  }
+
+  .counter-box {
+    padding: 1.75rem 2rem;
+    max-width: 320px;
+  }
+
+  .counter-value {
+    font-size: 2.75rem;
+  }
+
+  .counter-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 1.4rem;
+  }
+}
