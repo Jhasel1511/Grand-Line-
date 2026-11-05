@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 const Hero = () => {
@@ -13,9 +14,9 @@ const Hero = () => {
           Domina la librería más popular del frontend con proyectos prácticos y reales.
         </p>
         <div className="hero-actions">
-          <a href="#cursos" className="hero-btn-primary">
+          <Link to="/cursos" className="hero-btn-primary">
             Ver Cursos
-          </a>
+          </Link>
         </div>
       </div>
     </section>
@@ -23,3 +24,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

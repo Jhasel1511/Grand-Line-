@@ -5,10 +5,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="nosotros" className="footer">
+    <footer className="footer">
       <div className="footer-container">
         <p className="footer-copyright">
-          © {currentYear} <span className="footer-brand">ReactAcademy</span>. Taller 02 — React Fundamentos.
+          © {currentYear} <span className="footer-brand">ReactAcademy</span>. Taller 04 — Rutas y Navegación con React Router.
         </p>
       </div>
     </footer>
@@ -16,3 +16,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -8,12 +9,16 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="header-container">
-        <a href="#hero" className="logo">
+        <Link to="/" className="logo" onClick={closeMenu}>
           <span className="logo-highlight">React</span>Academy
-        </a>
+        </Link>
 
         <button 
           className={`menu-toggle ${isMenuOpen ? 'open' : ''}`}
@@ -26,9 +31,35 @@ const Header = () => {
         </button>
 
         <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
-          <a href="#hero" className="nav-link" onClick={() => setIsMenuOpen(false)}>Inicio</a>
-          <a href="#cursos" className="nav-link" onClick={() => setIsMenuOpen(false)}>Cursos</a>
-          <a href="#nosotros" className="nav-link" onClick={() => setIsMenuOpen(false)}>Nosotros</a>
+          <NavLink 
+            to="/" 
+            end
+            className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} 
+            onClick={closeMenu}
+          >
+            Inicio
+          </NavLink>
+          <NavLink 
+            to="/cursos" 
+            className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} 
+            onClick={closeMenu}
+          >
+            Cursos
+          </NavLink>
+          <NavLink 
+            to="/nosotros" 
+            className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} 
+            onClick={closeMenu}
+          >
+            Nosotros
+          </NavLink>
+          <NavLink 
+            to="/login" 
+            className={({ isActive }) => `nav-link nav-link-login ${isActive ? 'active' : ''}`} 
+            onClick={closeMenu}
+          >
+            Iniciar Sesión
+          </NavLink>
         </nav>
       </div>
     </header>
@@ -36,3 +67,4 @@ const Header = () => {
 };
 
 export default Header;
+
