@@ -6,7 +6,7 @@ export const Footer: React.FC = () => {
   return (
     <footer className="w-full bg-[#040e17] text-[#E9D8B4] border-t border-[#D9A441]/30 py-12 px-4 sm:px-6 lg:px-8 mt-auto">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        
+
         {/* Brand & Concept */}
         <div className="md:col-span-2 space-y-4">
           <div className="flex items-center gap-3">
@@ -85,7 +85,7 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto mt-8 pt-6 border-t border-[#102E46] flex flex-col sm:flex-row items-center justify-between text-xs text-[#E9D8B4]/60 gap-4">
         <p>© 2026 GRAND LINE EXPLORER • Travesía desarrollada con React, TypeScript y Tailwind CSS.</p>
         <p className="flex items-center gap-1">
-          Hecho con <Heart className="w-3.5 h-3.5 text-[#B83A3A] fill-current" /> para exploradores del océano
+          Hecho con <Heart className="w-3.5 h-3.5 text-[#B83A3A] fill-current" /> para exploradores del océano por Jhasel
         </p>
       </div>
     </footer>
